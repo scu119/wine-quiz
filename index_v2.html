@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PerBacco Wine Quiz</title>
+    <!-- Elegant Serif Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_v2.css">
+</head>
+<body>
+    <!-- Background Elements for Glassmorphism depth -->
+    <div class="bg-shape circle-1"></div>
+    <div class="bg-shape circle-2"></div>
+    <div class="bg-shape circle-3"></div>
+
+    <!-- Main App Container -->
+    <div class="app-container">
+        
+        <!-- Top Bar: Logo/Title & Language Toggle -->
+        <header class="top-bar">
+            <div class="brand">perbacco.</div>
+            <div class="language-toggle">
+                <span id="lang-ko" onclick="setLanguage('ko')">KOR</span>
+                <span class="divider">|</span>
+                <span id="lang-en" class="active" onclick="setLanguage('en')">ENG</span>
+            </div>
+        </header>
+
+        <!-- Dynamic Content Area -->
+        <main id="content-area" class="content-area">
+            <!-- Rendered by JS -->
+        </main>
+
+        <!-- Hidden Admin Trigger: double click bottom left corner -->
+        <div class="admin-mode-trigger" ondblclick="toggleAdminMode()" title="Double click for admin mode"></div>
+        <div id="admin-overlay" class="admin-overlay">
+            Admin Mode<br>Scores: <span id="admin-scores">-</span>
+        </div>
+    </div>
+    
+    <script src="script_v2.js?v=1"></script>
+</body>
+</html>

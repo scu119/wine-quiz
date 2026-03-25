@@ -1,0 +1,333 @@
+:root {
+    --bg-color: #fcf9f5;
+    --text-color: #2c2925;
+    --accent-color: #8b1c31; 
+    --accent-hover: #6a1324;
+    --border-color: #e5e0d8;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+#app {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.lang-toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: #999;
+    padding: 2px 6px;
+    transition: color 0.3s;
+}
+
+.lang-toggle button.active {
+    color: var(--text-color);
+}
+
+.lang-toggle .divider {
+    color: #ccc;
+    margin: 0 4px;
+}
+
+#content-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.illustration {
+    width: 60%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto 30px;
+    display: block;
+    border-radius: 8px; /* Optional, depending on logo styling */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.08); opacity: 1; filter: brightness(1.1); }
+    100% { transform: scale(1); opacity: 0.8; }
+}
+
+.pulsing-logo {
+    animation: pulse 3s infinite ease-in-out;
+}
+
+/* Options */
+h1.question-title {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-btn {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 16px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.option-btn:hover {
+    background: var(--accent-color);
+    color: white;
+}
+
+.option-btn.selected {
+    background: var(--accent-color);
+    color: white;
+}
+
+.question-number {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 30px;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    padding: 12px 24px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    transition: opacity 0.3s;
+}
+
+.nav-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.nav-btn.next-btn {
+    border: 1px solid var(--text-color);
+    border-radius: 20px;
+}
+
+.nav-btn.next-btn:hover:not(:disabled) {
+    background: var(--text-color);
+    color: white;
+}
+
+.nav-btn.submit-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+/* Waiting Screen */
+.waiting-screen {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.waiting-text {
+    margin-top: 20px;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* Result Screen */
+.result-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.result-main-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.result-content-row {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.result-image {
+    flex: 0 0 100px; /* Fixed width for the bottle image container */
+    background: #f0ebe1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.result-image img {
+    max-width: 100%;
+    height: auto;
+}
+.result-image-placeholder {
+    font-size: 0.8rem;
+    color: #999;
+    text-align: center;
+    padding: 10px;
+}
+
+.result-description {
+    flex: 1;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-description p {
+    margin-top: 5px;
+}
+
+.alt-wine-link {
+    margin-top: auto;
+    padding: 15px;
+    border: 1px dashed var(--accent-color);
+    border-radius: 8px;
+    color: var(--accent-color);
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+    width: 100%;
+}
+.alt-wine-link:hover {
+    background: rgba(139, 28, 49, 0.05);
+}
+
+.back-btn {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Admin Mode */
+.admin-mode-trigger {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 999;
+}
+.admin-overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: rgba(0,0,0,0.8);
+    color: lime;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 12px;
+    display: none;
+    z-index: 1000;
+    pointer-events: none;
+}
+.admin-overlay.active {
+    display: block;
+}
