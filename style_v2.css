@@ -158,11 +158,12 @@ body {
 
 .heading-primary {
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: 1.8rem; /* Slightly smaller for mobile */
     font-weight: 600;
     color: var(--text-primary);
-    margin-bottom: 32px;
-    line-height: 1.3;
+    margin-bottom: 20px; /* Reduced from 32px */
+    line-height: 1.2;
+    text-align: center;
 }
 
 .heading-secondary {
@@ -176,16 +177,16 @@ body {
 
 /* --- Media --- */
 .video-wrapper {
-    width: 100%;
+    max-width: 220px; /* Constrain size so it doesn't push down buttons */
+    margin: 0 auto 20px auto; /* Reduced margin, center aligned */
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 30px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     border: 1px solid var(--glass-border);
 }
 .video-wrapper video {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     display: block;
 }
