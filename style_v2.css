@@ -362,8 +362,8 @@ body {
 }
 
 .wine-image {
-    width: 233px; /* 50% larger than 155px */
-    height: 638px; /* 50% larger than 425px */
+    width: 175px; /* 75% of 233px */
+    height: 479px; /* 75% of 638px */
     object-fit: contain;
     background: transparent;
     padding: 0;
@@ -376,8 +376,8 @@ body {
         gap: 15px;
     }
     .wine-image {
-        width: 180px; /* 50% larger than 120px */
-        height: 473px; /* 50% larger than 315px */
+        width: 135px; /* 75% of 180px */
+        height: 355px; /* 75% of 473px */
     }
 }
 
