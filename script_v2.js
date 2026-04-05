@@ -214,7 +214,7 @@ const resultsData = {
         A: { 
             main: { name: "CINCINNATI, POLLUCE", imgSrc: "assets/Polluce_nobg.png", description: { en: "100% Nero Buono, Lazio. A ruby red wine, delicate and harmonious, with balanced complexity and light yet persistent tannins.", ko: "루비빛 레드 와인으로, 섬세하고 조화로우며 균형 잡힌 복합미와 가볍지만 지속적인 탄닌감을 지녔습니다." } },
             altLabel: { en: "Want something slightly more structured?", ko: "좀 더 구조감있는 와인을 원하시나요?" },
-            alt: { name: "MERUS SCHIAVA", imgSrc: "assets/bottle_placeholder.png", description: { en: "100% Schiava, Trentino Alto Adige. Fresh and mild character, with notes of sour cherry, roasted almond, cinnamon, and closing with weak refreshing tannin.", ko: "신선하고 순한 캐릭터, 시큼한 체리, 구운 아몬드, 시나몬의 노트가 특징이고 약한 탄닌이 상쾌하게 느껴진다." } }
+            alt: { name: "VILLA FURA VALPOLICELLA RIPASSO SUPERIORE", imgSrc: "assets/valpolicella_ripasso_nobg.png", description: { en: "60% Corvina, 25% Corvinone, 15% Rondinella, Veneto. Rich and velvety Valpolicella Ripasso Superiore with notes of dark cherry, dried fruit, and spice.", ko: "다크 체리, 건과일, 향신료의 풍미가 돋보이는 풍부하고 벨벳 같은 와인입니다." } }
         },
         B: { 
             main: { name: "FEUDO APULIANO, PRIMITIVO DEL SALENTO IGP", imgSrc: "assets/Primitivo_nobg.png", description: { en: "100% Primitivo, Puglia. A full-bodied yet smooth and well-balanced wine, showing intense aromas of ripe red fruit, a deep ruby-violet color, and a pleasant finish with subtle almond notes.", ko: "깊고 선명한 루비빛 컬러에 잘 익은 과실의 농밀한 향이 돋보이며, 풀바디이지만 부드럽고 균형 잡힌 구조와 은은한 아몬드 뉘앙스의 여운이 인상적인 와인입니다." } },
