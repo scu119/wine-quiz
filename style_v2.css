@@ -353,27 +353,30 @@ body {
     border-radius: 20px;
     padding: 24px;
     display: flex;
-    flex-direction: row; /* Side-by-side layout */
+    flex-direction: row; /* Always side-by-side layout */
     align-items: center;
     gap: 20px;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .wine-image {
     width: 100px;
-    height: auto;
-    max-height: 250px;
+    height: 250px;
     object-fit: contain;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.05); /* Placeholder faint background */
-    padding: 10px;
+    background: transparent;
+    padding: 0;
     flex-shrink: 0;
 }
 
 @media (max-width: 400px) {
     .wine-card {
-        flex-direction: column; /* Stack vertically on very small screens */
-        text-align: center;
+        padding: 15px;
+        gap: 15px;
+    }
+    .wine-image {
+        width: 80px;
+        height: 200px;
     }
 }
 
