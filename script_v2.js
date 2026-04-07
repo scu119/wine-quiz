@@ -212,93 +212,95 @@ const quizData = {
 const resultsData = {
     red: {
         A: { 
-            main: { name: "CINCINNATI, POLLUCE", imgSrc: "assets/Polluce_nobg.png", description: { en: "100% Nero Buono, Lazio. A ruby red wine, delicate and harmonious, with balanced complexity and light yet persistent tannins.", ko: "루비빛 레드 와인으로, 섬세하고 조화로우며 균형 잡힌 복합미와 가볍지만 지속적인 탄닌감을 지녔습니다." } },
+            main: { name: "CINCINNATI, POLLUCE", price: 63, imgSrc: "assets/Polluce_nobg.png", description: { en: "100% Nero Buono, Lazio. A ruby red wine, delicate and harmonious, with balanced complexity and light yet persistent tannins.", ko: "루비빛 레드 와인으로, 섬세하고 조화로우며 균형 잡힌 복합미와 가볍지만 지속적인 탄닌감을 지녔습니다." } },
             altLabel: { en: "Want something slightly more structured?", ko: "좀 더 구조감있는 와인을 원하시나요?" },
-            alt: { name: "VILLA FURA VALPOLICELLA RIPASSO SUPERIORE", imgSrc: "assets/valpolicella_ripasso_nobg.png", description: { en: "60% Corvina, 25% Corvinone, 15% Rondinella, Veneto. Rich and velvety Valpolicella Ripasso Superiore with notes of dark cherry, dried fruit, and spice.", ko: "다크 체리, 건과일, 향신료의 풍미가 돋보이는 풍부하고 벨벳 같은 와인입니다." } }
+            alt: { name: "VILLA FURA VALPOLICELLA RIPASSO SUPERIORE", price: 69, imgSrc: "assets/valpolicella_ripasso_nobg.png", description: { en: "60% Corvina, 25% Corvinone, 15% Rondinella, Veneto. Rich and velvety Valpolicella Ripasso Superiore with notes of dark cherry, dried fruit, and spice.", ko: "다크 체리, 건과일, 향신료의 풍미가 돋보이는 풍부하고 벨벳 같은 와인입니다." } }
         },
         B: { 
-            main: { name: "FEUDO APULIANO, PRIMITIVO DEL SALENTO IGP", imgSrc: "assets/Primitivo_nobg.png", description: { en: "100% Primitivo, Puglia. A full-bodied yet smooth and well-balanced wine, showing intense aromas of ripe red fruit, a deep ruby-violet color, and a pleasant finish with subtle almond notes.", ko: "깊고 선명한 루비빛 컬러에 잘 익은 과실의 농밀한 향이 돋보이며, 풀바디이지만 부드럽고 균형 잡힌 구조와 은은한 아몬드 뉘앙스의 여운이 인상적인 와인입니다." } },
+            main: { name: "FEUDO APULIANO, PRIMITIVO DEL SALENTO IGP", price: 59, imgSrc: "assets/Primitivo_nobg.png", description: { en: "100% Primitivo, Puglia. A full-bodied yet smooth and well-balanced wine, showing intense aromas of ripe red fruit, a deep ruby-violet color, and a pleasant finish with subtle almond notes.", ko: "깊고 선명한 루비빛 컬러에 잘 익은 과실의 농밀한 향이 돋보이며, 풀바디이지만 부드럽고 균형 잡힌 구조와 은은한 아몬드 뉘앙스의 여운이 인상적인 와인입니다." } },
             altLabel: { en: "Want something softer and less fruity?", ko: "좀 더 부드럽고 덜 과실향이 나는 와인을 원하시나요?" }, 
-            alt: { name: "DON TOMASI, JATO ROSSO", imgSrc: "assets/don_tomasi_jato_rosso_nobg.png", description: { en: "Shiraz, Nero D'avola, Sicilia. A fragrant wine displaying supple tannins, subtle herbal nuances, and remarkable balance on the palate.", ko: "섬세한 허브의 뉘앙스와 유연한 탄닌이 어우러진 향기로운 와인으로, 입안에서는 뛰어난 밸런스를 보여줍니다." } }
+            alt: { name: "DON TOMASI, JATO ROSSO", price: 72, imgSrc: "assets/don_tomasi_jato_rosso_nobg.png", description: { en: "Shiraz, Nero D'avola, Sicilia. A fragrant wine displaying supple tannins, subtle herbal nuances, and remarkable balance on the palate.", ko: "섬세한 허브의 뉘앙스와 유연한 탄닌이 어우러진 향기로운 와인으로, 입안에서는 뛰어난 밸런스를 보여줍니다." } }
         },
         C: { 
-            main: { name: "DON TOMASI, JATO ROSSO", imgSrc: "assets/don_tomasi_jato_rosso_nobg.png", description: { en: "Shiraz, Nero D'avola, Sicilia. A fragrant wine displaying supple tannins, subtle herbal nuances, and remarkable balance on the palate.", ko: "섬세한 허브의 뉘앙스와 유연한 탄닌이 어우러진 향기로운 와인으로, 입안에서는 뛰어난 밸런스를 보여줍니다." } },
+            main: { name: "DON TOMASI, JATO ROSSO", price: 72, imgSrc: "assets/don_tomasi_jato_rosso_nobg.png", description: { en: "Shiraz, Nero D'avola, Sicilia. A fragrant wine displaying supple tannins, subtle herbal nuances, and remarkable balance on the palate.", ko: "섬세한 허브의 뉘앙스와 유연한 탄닌이 어우러진 향기로운 와인으로, 입안에서는 뛰어난 밸런스를 보여줍니다." } },
             altLabel: { en: "Want something stronger and more powerful?", ko: "좀 더 강하고 힘 있는 와인을 원하시나요?" }, 
-            alt: { name: "SILVIO CARTA, CANNONAU DI SARDEGNA SERENATA DOC", imgSrc: "assets/CannonaudiSardegna_nobg.png", description: { en: "100% Cannonau, Sardegna. Ripe, rich and warm notes of dark cherry, plum, blackberry and mint. Delicate aniseed touch, strong tannin, dry ending.", ko: "다크 체리, 자두, 블랙베리, 민트의 잘 익은 풍부하고 따뜻한 향입니다. 적당한 탄닌이 무게를 잘 잡아준다." } }
+            alt: { name: "SILVIO CARTA, CANNONAU DI SARDEGNA SERENATA DOC", price: 79, imgSrc: "assets/CannonaudiSardegna_nobg.png", description: { en: "100% Cannonau, Sardegna. Ripe, rich and warm notes of dark cherry, plum, blackberry and mint. Delicate aniseed touch, strong tannin, dry ending.", ko: "다크 체리, 자두, 블랙베리, 민트의 잘 익은 풍부하고 따뜻한 향입니다. 적당한 탄닌이 무게를 잘 잡아준다." } }
         },
         D: { 
-            main: { name: "TIRTEO, BARBERA D'ASTI SUPERIORE DOCG", imgSrc: "assets/Barberadasti_nobg.png", description: { en: "100% Barbera, Piemonte. A bright ruby red wine with aromas of ripe red fruit and subtle spice, offering a well-defined structure, balanced tannins and a smooth, lingering finish.", ko: "선명한 루비 레드 컬러에 잘 익은 붉은 과실과 은은한 향신료 뉘앙스가 어우러지며, 균형 잡힌 탄닌과 부드러운 질감, 길게 이어지는 여운이 특징입니다." } },
+            main: { name: "TIRTEO, BARBERA D'ASTI SUPERIORE DOCG", price: 82, imgSrc: "assets/Barberadasti_nobg.png", description: { en: "100% Barbera, Piemonte. A bright ruby red wine with aromas of ripe red fruit and subtle spice, offering a well-defined structure, balanced tannins and a smooth, lingering finish.", ko: "선명한 루비 레드 컬러에 잘 익은 붉은 과실과 은은한 향신료 뉘앙스가 어우러지며, 균형 잡힌 탄닌과 부드러운 질감, 길게 이어지는 여운이 특징입니다." } },
             altLabel: { en: "Want something more fruity than spices?", ko: "향신료보다는 더 과실 향이 강한 와인을 원하시나요?" }, 
-            alt: { name: "TENUTA MONTETI, CABURNIO", imgSrc: "assets/Tenuta_Monteti_Caburnio_Toscana__78761_nobg.png", description: { en: "50% Cabernet Sauvignon, 25% Merlot, 25% Alicante Bouschet, Toscana. Intense ruby. Captivating nose, with fresh notes of berries, cherry, currant and pomegranate. Persistent tannin, soft finishing.", ko: "강렬한 루비. 베리, 체리, 건포도, 석류의 신선한 향이 코를 사로잡습니다. 지속적인 탄닌, 부드러운 마무리 향신." } }
+            alt: { name: "TENUTA MONTETI, CABURNIO", price: 86, imgSrc: "assets/Tenuta_Monteti_Caburnio_Toscana__78761_nobg.png", description: { en: "50% Cabernet Sauvignon, 25% Merlot, 25% Alicante Bouschet, Toscana. Intense ruby. Captivating nose, with fresh notes of berries, cherry, currant and pomegranate. Persistent tannin, soft finishing.", ko: "강렬한 루비. 베리, 체리, 건포도, 석류의 신선한 향이 코를 사로잡습니다. 지속적인 탄닌, 부드러운 마무리 향신." } }
         }
     },
     white: {
         A: {
-            main: { name: "CANICATTI, GRILLO DOC", imgSrc: "assets/Grillo Canicatti_nobg.png", description: { en: "100% Grillo, Sicilia. Well-ended and harmonious scents. On the palate decisive, fruity, with an appropriate acidic component.", ko: "잘 마무리되고 조화로운 향기. 맛은 결정적이며 과일 향이 나며 적절한 산성이 들어 있습니다." } },
+            main: { name: "CANICATTI, GRILLO DOC", price: 65, imgSrc: "assets/Grillo Canicatti_nobg.png", description: { en: "100% Grillo, Sicilia. Well-ended and harmonious scents. On the palate decisive, fruity, with an appropriate acidic component.", ko: "잘 마무리되고 조화로운 향기. 맛은 결정적이며 과일 향이 나며 적절한 산성이 들어 있습니다." } },
             altLabel: { en: "Want something more aromatic and smooth?", ko: "좀 더 향긋하고 부드러운 와인을 원하시나요?" },
-            alt: { name: "LA KIUVA, ROSE' DE VALLE", imgSrc: "assets/La-kiuvarose_nobg.png", description: { en: "70% Picotendro, 30% Gros Vien, Neyret, Cornalin and Fumin, Valle D'Aosta. Aromas of fresh red berries and wild fruit; on the palate it is fresh and mineral with a delicate bitter finish.", ko: "신선한 붉은 베리와 야생 과일 향이 나며, 입안에서는 상쾌하고 미네랄감이 느껴지고 끝에는 은은한 쓴맛이 남습니다." } }
+            alt: { name: "LA KIUVA, ROSE' DE VALLE", price: 74, imgSrc: "assets/La-kiuvarose_nobg.png", description: { en: "70% Picotendro, 30% Gros Vien, Neyret, Cornalin and Fumin, Valle D'Aosta. Aromas of fresh red berries and wild fruit; on the palate it is fresh and mineral with a delicate bitter finish.", ko: "신선한 붉은 베리와 야생 과일 향이 나며, 입안에서는 상쾌하고 미네랄감이 느껴지고 끝에는 은은한 쓴맛이 남습니다." } }
         },
         B: {
-            main: { name: "DON TOMASI, JATO' LUCIDO", imgSrc: "assets/don_tomasi_jato lucido_nobg.png", description: { en: "100% Catarratto Lucido, Sicilia. An elegant profile of ripe white fruit and zesty citrus, balanced by subtle minerality.", ko: "잘 익은 백색 과일과 상큼한 감귤 향, 은은한 미네랄과 아몬드 뉘앙스가 어우러진 우아한 풍미입니다." } },
+            main: { name: "DON TOMASI, JATO' LUCIDO", price: 72, imgSrc: "assets/don_tomasi_jato lucido_nobg.png", description: { en: "100% Catarratto Lucido, Sicilia. An elegant profile of ripe white fruit and zesty citrus, balanced by subtle minerality.", ko: "잘 익은 백색 과일과 상큼한 감귤 향, 은은한 미네랄과 아몬드 뉘앙스가 어우러진 우아한 풍미입니다." } },
             altLabel: { en: "Want something more mineral?", ko: "좀 더 미네랄리티가 풍부한 와인을 원하시나요?" },
-            alt: { name: "PRIMA PIETRA, SOAVE DOC", imgSrc: "assets/335_58.Prima Pietra SOAVE_nobg.png", description: { en: "100% Garganega, Veneto. Citrus and floreal notes, green fruits finishing with smooth acidity.", ko: "시트러스와 꽃향기가 느껴지고 풋과실 상큼함이 고소한 견과류향과 마지막을 장식합니다." } }
+            alt: { name: "PRIMA PIETRA, SOAVE DOC", price: 59, imgSrc: "assets/335_58.Prima Pietra SOAVE_nobg.png", description: { en: "100% Garganega, Veneto. Citrus and floreal notes, green fruits finishing with smooth acidity.", ko: "시트러스와 꽃향기가 느껴지고 풋과실 상큼함이 고소한 견과류향과 마지막을 장식합니다." } }
         },
         C: {
-            main: { name: "SISTINA, PECORINO IGT", imgSrc: "assets/Pecorino_nobg.png", description: { en: "100% Pecorino, Abruzzo. A fresh and vibrant Pecorino, with notes of citrus, white peach, and delicate floral hints. Crisp acidity and a mineral-driven finish make it bright and refreshing.", ko: "상큼하고 생동감 있는 페코리노 와인으로, 시트러스와 화이트 피치, 은은한 꽃 향이 느껴집니다. 산뜻한 산미와 미네랄리티가 돋보이며 깔끔한 피니시를 선사합니다." } },
+            main: { name: "SISTINA, PECORINO IGT", price: 68, imgSrc: "assets/Pecorino_nobg.png", description: { en: "100% Pecorino, Abruzzo. A fresh and vibrant Pecorino, with notes of citrus, white peach, and delicate floral hints. Crisp acidity and a mineral-driven finish make it bright and refreshing.", ko: "상큼하고 생동감 있는 페코리노 와인으로, 시트러스와 화이트 피치, 은은한 꽃 향이 느껴집니다. 산뜻한 산미와 미네랄리티가 돋보이며 깔끔한 피니시를 선사합니다." } },
             altLabel: { en: "Want something slightly more off-dry?", ko: "살짝 더 오프-드라이한 와인을 원하시나요?" },
-            alt: { name: "VILLA SPARINA, GAVI DOCG", imgSrc: "assets/Villa-Sparina-Gavi_nobg.png", description: { en: "100% Cortese, Piemonte. Floreal notes with aromas of yellow fruits and tropical fruit. Long finish with soft acid and persinstent structure.", ko: "꽃 향이 어우러진 과일향 풍부하고, 애씨드 구조로 롱 피니쉬가 느껴집니다." } }
+            alt: { name: "VILLA SPARINA, GAVI DOCG", price: 86, imgSrc: "assets/Villa-Sparina-Gavi_nobg.png", description: { en: "100% Cortese, Piemonte. Floreal notes with aromas of yellow fruits and tropical fruit. Long finish with soft acid and persinstent structure.", ko: "꽃 향이 어우러진 과일향 풍부하고, 애씨드 구조로 롱 피니쉬가 느껴집니다." } }
         },
         D: {
-            main: { name: "DON TOMASI, GRILLO CHARDONNAY", imgSrc: "assets/grillo-chardonnay_nobg.png", description: { en: "50% Grillo, 50% Chardonnay, Sicilia. A vibrant and aromatic wine with ripe tropical fruit notes, hints of citrus and white flowers, a soft vanilla touch, fresh acidity, gentle minerality and a clean, lingering finish.", ko: "잘 익은 열대과일의 풍부한 향과 시트러스, 흰 꽃의 뉘앙스에 부드러운 바닐라 터치가 어우러지며, 신선한 산미와 은은한 미네랄리티, 깔끔하고 길게 이어지는 피니시가 특징입니다." } },
+            main: { name: "DON TOMASI, GRILLO CHARDONNAY", price: 79, imgSrc: "assets/grillo-chardonnay_nobg.png", description: { en: "50% Grillo, 50% Chardonnay, Sicilia. A vibrant and aromatic wine with ripe tropical fruit notes, hints of citrus and white flowers, a soft vanilla touch, fresh acidity, gentle minerality and a clean, lingering finish.", ko: "잘 익은 열대과일의 풍부한 향과 시트러스, 흰 꽃의 뉘앙스에 부드러운 바닐라 터치가 어우러지며, 신선한 산미와 은은한 미네랄리티, 깔끔하고 길게 이어지는 피니시가 특징입니다." } },
             altLabel: { en: "Want something fresher and more mineral?", ko: "좀 더 상쾌하고 미네랄감이 느껴지는 와인은 어떠신가요?" },
-            alt: { name: "DON TOMASI, JATO' LUCIDO", imgSrc: "assets/don_tomasi_jato lucido_nobg.png", description: { en: "100% Catarratto Lucido, Sicilia. An elegant profile of ripe white fruit and zesty citrus, balanced by subtle minerality.", ko: "잘 익은 백색 과일과 상큼한 감귤 향, 은은한 미네랄과 아몬드 뉘앙스가 어우러진 우아한 풍미입니다." } }
+            alt: { name: "DON TOMASI, JATO' LUCIDO", price: 72, imgSrc: "assets/don_tomasi_jato lucido_nobg.png", description: { en: "100% Catarratto Lucido, Sicilia. An elegant profile of ripe white fruit and zesty citrus, balanced by subtle minerality.", ko: "잘 익은 백색 과일과 상큼한 감귤 향, 은은한 미네랄과 아몬드 뉘앙스가 어우러진 우아한 풍미입니다." } }
         }
     },
     sparkling: {
         A: {
-            main: { name: "VILLA SANDI, PROSECCO ROSE' MILLESIMATO DOC", imgSrc: "assets/Villa sandi rose millesimato_nobg.png", description: { en: "90% Glera, 10% Pinot Nero, Veneto. Fresh note of flowers and vanilla, elegant sparkle and finishing.", ko: "꽃과 바닐라의 상큼한 노트, 우아한 스파클링과 마무리 느낌 줍니다." } },
+            main: { name: "VILLA SANDI, PROSECCO ROSE' MILLESIMATO DOC", price: 75, imgSrc: "assets/Villa sandi rose millesimato_nobg.png", description: { en: "90% Glera, 10% Pinot Nero, Veneto. Fresh note of flowers and vanilla, elegant sparkle and finishing.", ko: "꽃과 바닐라의 상큼한 노트, 우아한 스파클링과 마무리 느낌 줍니다." } },
             altLabel: { en: "Want more round finish?", ko: "좀 더 둥글고 부드러운 마무리를 원하시나요?" },
-            alt: { name: "FASOL MENIN VALDOBBIADENE PROSECCO SUPERIORE DOCG EXTRA DRY", imgSrc: "assets/Prosecco-Fasol-Menin-Leonte-DOCG_nobg.png", description: { en: "100% Glera, Veneto. Elegant and aromatic sparkling wine with notes of white flowers, apple and pear, balanced by a delicate sweetness and lively bubbles.", ko: "흰 꽃과 사과, 배의 향이 어우러진 우아한 스파클링 와인으로, 섬세한 단맛과 상쾌한 기포가 특징입니다." } }
+            alt: { name: "FASOL MENIN VALDOBBIADENE PROSECCO SUPERIORE DOCG EXTRA DRY", price: 79, imgSrc: "assets/Prosecco-Fasol-Menin-Leonte-DOCG_nobg.png", description: { en: "100% Glera, Veneto. Elegant and aromatic sparkling wine with notes of white flowers, apple and pear, balanced by a delicate sweetness and lively bubbles.", ko: "흰 꽃과 사과, 배의 향이 어우러진 우아한 스파클링 와인으로, 섬세한 단맛과 상쾌한 기포가 특징입니다." } }
         },
         B: {
-            main: { name: "VILLA SANDI, PROSECCO DI VALDOBBIADENE IL FRESCO DOC BRUT", imgSrc: "assets/il-fresco-prosecco-doc-treviso_nobg.png", description: { en: "100% Glera, Veneto. Strong fruity scent and elegant floral scent reminiscent of acacia along with aromas of ripe golden apple and northern pine.", ko: "과실향이 강렬하며 잘 익은 금빛 사과, 복숭아 등의 아로마와 함께 아카시아를 연상시키는 우아한 꽃 향을 가졌습니다." } },
+            main: { name: "VILLA SANDI, PROSECCO DI VALDOBBIADENE IL FRESCO DOC BRUT", price: 69, imgSrc: "assets/il-fresco-prosecco-doc-treviso_nobg.png", description: { en: "100% Glera, Veneto. Strong fruity scent and elegant floral scent reminiscent of acacia along with aromas of ripe golden apple and northern pine.", ko: "과실향이 강렬하며 잘 익은 금빛 사과, 복숭아 등의 아로마와 함께 아카시아를 연상시키는 우아한 꽃 향을 가졌습니다." } },
             altLabel: { en: "Want more fragrant and fresh?", ko: "좀 더 향기롭고 신선한 느낌을 원하시나요?" },
-            alt: { name: "TENUTA SANTOME', PROSECCO DOC TREVISO EXTRA DRY", imgSrc: "assets/Prosecco Santome__nobg.png", description: { en: "100% Glera, Veneto. A fresh and light Prosecco doc extra dry with delicate aromas of apple and acacia flowers, fine bubbles and a well-balanced acidity.", ko: "사과와 아카시아 꽃의 은은한 향, 섬세한 기포와 균형 잡힌 산미가 어우러진 상쾌한 스타일의 프로세코 doc 엑스트라 드라이입니다." } }
+            alt: { name: "TENUTA SANTOME', PROSECCO DOC TREVISO EXTRA DRY", price: 67, imgSrc: "assets/Prosecco Santome__nobg.png", description: { en: "100% Glera, Veneto. A fresh and light Prosecco doc extra dry with delicate aromas of apple and acacia flowers, fine bubbles and a well-balanced acidity.", ko: "사과와 아카시아 꽃의 은은한 향, 섬세한 기포와 균형 잡힌 산미가 어우러진 상쾌한 스타일의 프로세코 doc 엑스트라 드라이입니다." } }
         },
         C: {
-            main: { name: "TENUTA SANTOME', PROSECCO DOC TREVISO EXTRA DRY", imgSrc: "assets/Prosecco Santome__nobg.png", description: { en: "100% Glera, Veneto. A fresh and light Prosecco doc extra dry with delicate aromas of apple and acacia flowers, fine bubbles and a well-balanced acidity.", ko: "사과와 아카시아 꽃의 은은한 향, 섬세한 기포와 균형 잡힌 산미가 어우러진 상쾌한 스타일의 프로세코 doc 엑스트라 드라이입니다." } },
+            main: { name: "TENUTA SANTOME', PROSECCO DOC TREVISO EXTRA DRY", price: 67, imgSrc: "assets/Prosecco Santome__nobg.png", description: { en: "100% Glera, Veneto. A fresh and light Prosecco doc extra dry with delicate aromas of apple and acacia flowers, fine bubbles and a well-balanced acidity.", ko: "사과와 아카시아 꽃의 은은한 향, 섬세한 기포와 균형 잡힌 산미가 어우러진 상쾌한 스타일의 프로세코 doc 엑스트라 드라이입니다." } },
             altLabel: { en: "Want more funky and aromatic?", ko: "좀 더 개성 있고 펑키한 와인은 어떠신가요?" },
-            alt: { name: "TERRE FORTI, LAMBRUSCO IGT", imgSrc: "assets/Lambrusco_nobg.png", description: { en: "100% Lambrusco, Emilia-Romagna. A smooth and approachable red sparkling wine with gentle bubbles, a subtle sweetness and a fresh, balanced finish that pairs easily with a wide range of dishes.", ko: "부드러운 기포와 은은한 단맛, 산뜻하고 균형 잡힌 마무리가 특징인 레드 스파클링 와인으로 다양한 음식과 편안하게 어울립니다." } }
+            alt: { name: "TERRE FORTI, LAMBRUSCO IGT", price: 72, imgSrc: "assets/Lambrusco_nobg.png", description: { en: "100% Lambrusco, Emilia-Romagna. A smooth and approachable red sparkling wine with gentle bubbles, a subtle sweetness and a fresh, balanced finish that pairs easily with a wide range of dishes.", ko: "부드러운 기포와 은은한 단맛, 산뜻하고 균형 잡힌 마무리가 특징인 레드 스파클링 와인으로 다양한 음식과 편안하게 어울립니다." } }
         },
         D: {
-            main: { name: "FASOL MENIN VALDOBBIADENE PROSECCO SUPERIORE DOCG EXTRA DRY LEONTE", imgSrc: "assets/Prosecco-Fasol-Menin-Leonte-DOCG_nobg.png", description: { en: "100% Glera, Veneto. Elegant and aromatic sparkling wine with notes of white flowers, apple and pear, balanced by a delicate sweetness and lively bubbles.", ko: "흰 꽃과 사과, 배의 향이 어우러진 우아한 스파클링 와인으로, 섬세한 단맛과 상쾌한 기포가 특징입니다." } },
+            main: { name: "FASOL MENIN VALDOBBIADENE PROSECCO SUPERIORE DOCG EXTRA DRY LEONTE", price: 79, imgSrc: "assets/Prosecco-Fasol-Menin-Leonte-DOCG_nobg.png", description: { en: "100% Glera, Veneto. Elegant and aromatic sparkling wine with notes of white flowers, apple and pear, balanced by a delicate sweetness and lively bubbles.", ko: "흰 꽃과 사과, 배의 향이 어우러진 우아한 스파클링 와인으로, 섬세한 단맛과 상쾌한 기포가 특징입니다." } },
             altLabel: { en: "Want more dry?", ko: "좀 더 드라이하고 깔끔한 맛을 원하시나요?" },
-            alt: { name: "VILLA SANDI IL FRESCO BRUT", imgSrc: "assets/il-fresco-prosecco-doc-treviso_nobg.png", description: { en: "100% Glera, Veneto. Strong fruity scent and elegant floral scent reminiscent of acacia along with aromas of ripe golden apple and northern pine.", ko: "과실향이 강렬하며 잘 익은 금빛 사과, 복숭아 등의 아로마와 함께 아카시아를 연상시키는 우아한 꽃 향을 가졌습니다." } }
+            alt: { name: "VILLA SANDI IL FRESCO BRUT", price: 69, imgSrc: "assets/il-fresco-prosecco-doc-treviso_nobg.png", description: { en: "100% Glera, Veneto. Strong fruity scent and elegant floral scent reminiscent of acacia along with aromas of ripe golden apple and northern pine.", ko: "과실향이 강렬하며 잘 익은 금빛 사과, 복숭아 등의 아로마와 함께 아카시아를 연상시키는 우아한 꽃 향을 가졌습니다." } }
         }
     },
     surprise: {
         A: {
-            main: { name: "DON TOMASI, GRILLO CHARDONNAY", imgSrc: "assets/grillo-chardonnay_nobg.png", description: { en: "50% Grillo, 50% Chardonnay, Sicilia. A vibrant and aromatic wine with ripe tropical fruit notes, hints of citrus and white flowers, a soft vanilla touch.", ko: "잘 익은 열대과일의 풍부한 향과 시트러스, 흰 꽃의 뉘앙스에 부드러운 바닐라 터치가 특징입니다." } },
+            main: { name: "DON TOMASI, GRILLO CHARDONNAY", price: 79, imgSrc: "assets/grillo-chardonnay_nobg.png", description: { en: "50% Grillo, 50% Chardonnay, Sicilia. A vibrant and aromatic wine with ripe tropical fruit notes, hints of citrus and white flowers, a soft vanilla touch.", ko: "잘 익은 열대과일의 풍부한 향과 시트러스, 흰 꽃의 뉘앙스에 부드러운 바닐라 터치가 특징입니다." } },
             altLabel: { en: "Want less aromatic?", ko: "좀 더 은은하고 심플한 향을 선호하시나요?" },
-            alt: { name: "SISTINA, PECORINO IGT", imgSrc: "assets/Pecorino_nobg.png", description: { en: "100% Pecorino, Abruzzo. A fresh and vibrant Pecorino, with notes of citrus, white peach, and delicate floral hints. Crisp acidity and a mineral-driven finish.", ko: "상큼하고 생동감 있는 페코리노 와인으로, 시트러스와 화이트 피치 부드러운 향이 느껴집니다." } }
+            alt: { name: "SISTINA, PECORINO IGT", price: 68, imgSrc: "assets/Pecorino_nobg.png", description: { en: "100% Pecorino, Abruzzo. A fresh and vibrant Pecorino, with notes of citrus, white peach, and delicate floral hints. Crisp acidity and a mineral-driven finish.", ko: "상큼하고 생동감 있는 페코리노 와인으로, 시트러스와 화이트 피치 부드러운 향이 느껴집니다." } }
         },
         B: {
-            main: { name: "TIRTEO, BARBERA D'ASTI SUPERIORE DOCG", imgSrc: "assets/Barberadasti_nobg.png", description: { en: "100% Barbera, Piemonte. A bright ruby red wine with aromas of ripe red fruit and subtle spice, offering a well-defined structure, balanced tannins and a smooth, lingering finish.", ko: "선명한 루비 레드 컬러에 잘 익은 붉은 과실과 은은한 향신료 뉘앙스가 어우러집니다." } },
+            main: { name: "TIRTEO, BARBERA D'ASTI SUPERIORE DOCG", price: 82, imgSrc: "assets/Barberadasti_nobg.png", description: { en: "100% Barbera, Piemonte. A bright ruby red wine with aromas of ripe red fruit and subtle spice, offering a well-defined structure, balanced tannins and a smooth, lingering finish.", ko: "선명한 루비 레드 컬러에 잘 익은 붉은 과실과 은은한 향신료 뉘앙스가 어우러집니다." } },
             altLabel: { en: "Want more fruity and bold?", ko: "좀 더 바디감이 깊고 큰 와인은 어떠세요?" },
-            alt: { name: "SILVIO CARTA, CANNONAU DI SARDEGNA SERENATA DOC", imgSrc: "assets/CannonaudiSardegna_nobg.png", description: { en: "100% Cannonau, Sardegna. Ripe, rich and warm notes of dark cherry, plum, blackberry and mint. Delicate aniseed touch, strong tannin, dry ending.", ko: "다크 체리, 자두, 블랙베리, 민트의 잘 익고 풍부한 향입니다." } }
+            alt: { name: "SILVIO CARTA, CANNONAU DI SARDEGNA SERENATA DOC", price: 79, imgSrc: "assets/CannonaudiSardegna_nobg.png", description: { en: "100% Cannonau, Sardegna. Ripe, rich and warm notes of dark cherry, plum, blackberry and mint. Delicate aniseed touch, strong tannin, dry ending.", ko: "다크 체리, 자두, 블랙베리, 민트의 잘 익고 풍부한 향입니다." } }
         },
         C: {
-            main: { name: "LA KIUVA, ROSE' DE VALLE", imgSrc: "assets/La-kiuvarose_nobg.png", description: { en: "70% Picotendro, 30% Gros Vien, Neyret, Cornalin and Fumin, Valle D'Aosta. Aromas of fresh red berries and wild fruit; on the palate it is fresh and mineral with a delicate bitter finish.", ko: "신선한 붉은 베리와 야생 과일 향이 나며, 입안에서는 상쾌하고 미네랄감이 느껴집니다." } },
+            main: { name: "LA KIUVA, ROSE' DE VALLE", price: 74, imgSrc: "assets/La-kiuvarose_nobg.png", description: { en: "70% Picotendro, 30% Gros Vien, Neyret, Cornalin and Fumin, Valle D'Aosta. Aromas of fresh red berries and wild fruit; on the palate it is fresh and mineral with a delicate bitter finish.", ko: "신선한 붉은 베리와 야생 과일 향이 나며, 입안에서는 상쾌하고 미네랄감이 느껴집니다." } },
             altLabel: { en: "Want more mineral and fresh?", ko: "좀 더 상쾌한 미네랄이 필요하신가요?" },
-            alt: { name: "DON TOMASI, JATO' LUCIDO", imgSrc: "assets/don_tomasi_jato lucido_nobg.png", description: { en: "100% Catarratto Lucido, Sicilia. An elegant profile of ripe white fruit and zesty citrus, balanced by subtle minerality.", ko: "잘 익은 백색 과일과 상큼한 감귤 향, 은은한 미네랄이 어우러진 우아한 풍미입니다." } }
+            alt: { name: "DON TOMASI, JATO' LUCIDO", price: 72, imgSrc: "assets/don_tomasi_jato lucido_nobg.png", description: { en: "100% Catarratto Lucido, Sicilia. An elegant profile of ripe white fruit and zesty citrus, balanced by subtle minerality.", ko: "잘 익은 백색 과일과 상큼한 감귤 향, 은은한 미네랄이 어우러진 우아한 풍미입니다." } }
         },
         D: {
-            main: { name: "TENUTA SANTOME', PROSECCO DOC TREVISO EXTRA DRY", imgSrc: "assets/Prosecco Santome__nobg.png", description: { en: "100% Glera, Veneto. A fresh and light Prosecco doc extra dry with delicate aromas of apple and acacia flowers, fine bubbles and a well-balanced acidity.", ko: "사과와 아카시아 꽃의 은은한 향, 섬세한 기포, 완벽한 스파클링입니다." } },
+            main: { name: "TENUTA SANTOME', PROSECCO DOC TREVISO EXTRA DRY", price: 67, imgSrc: "assets/Prosecco Santome__nobg.png", description: { en: "100% Glera, Veneto. A fresh and light Prosecco doc extra dry with delicate aromas of apple and acacia flowers, fine bubbles and a well-balanced acidity.", ko: "사과와 아카시아 꽃의 은은한 향, 섬세한 기포, 완벽한 스파클링입니다." } },
             altLabel: { en: "Want to try something different?", ko: "조금은 색다르고 유니크한 와인에 도전해볼까요?" },
-            alt: { name: "VILLA SPARINA, GAVI DOCG", imgSrc: "assets/Villa-Sparina-Gavi_nobg.png", description: { en: "100% Cortese, Piemonte. Floreal notes with aromas of yellow fruits and tropical fruit. Long finish with soft acid and persinstent structure.", ko: "꽃 향이 어우러진 과일향, 탄탄한 구조감의 화이트 와인입니다." } }
+            alt: { name: "VILLA SPARINA, GAVI DOCG", price: 86, imgSrc: "assets/Villa-Sparina-Gavi_nobg.png", description: { en: "100% Cortese, Piemonte. Floreal notes with aromas of yellow fruits and tropical fruit. Long finish with soft acid and persinstent structure.", ko: "꽃 향이 어우러진 과일향, 탄탄한 구조감의 화이트 와인입니다." } }
         }
     }
 };
+
+
 
 let currentLang = 'en'; // default ENG
 let currentWineType = null;
@@ -508,6 +510,7 @@ function renderResultScreen() {
             <div class="result-header">
                 <div class="congrats">${isViewingAlt ? "Second Recommendation" : uiText.congrats[currentLang]}</div>
                 <h1 class="wine-title">${target.name}</h1>
+                ${target.price ? `<div class="wine-price" style="font-size: 1.5rem; font-weight: bold; color: #ffeb3b; margin-top: 10px;">${target.price},000 ₩</div>` : ''}
             </div>
             
             <div class="wine-card">
