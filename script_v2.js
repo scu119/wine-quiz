@@ -510,7 +510,7 @@ function renderResultScreen() {
             <div class="result-header">
                 <div class="congrats">${isViewingAlt ? "Second Recommendation" : uiText.congrats[currentLang]}</div>
                 <h1 class="wine-title">${target.name}</h1>
-                ${target.price ? `<div class="wine-price" style="font-size: 1.5rem; font-weight: bold; color: #ffeb3b; margin-top: 10px;">${target.price},000 ₩</div>` : ''}
+                ${target.price ? `<div class="wine-price" style="font-size: 1.125rem; font-weight: bold; color: #ffeb3b; margin-top: 10px;">${target.price},000 ₩</div>` : ''}
             </div>
             
             <div class="wine-card">
