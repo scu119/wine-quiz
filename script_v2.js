@@ -211,24 +211,24 @@ const quizData = {
 
 const resultsData = {
     red: {
-        A: { 
+        A: {
             main: { name: "CINCINNATI, POLLUCE", price: 63, imgSrc: "assets/Polluce_nobg.png", description: { en: "100% Nero Buono, Lazio. A ruby red wine, delicate and harmonious, with balanced complexity and light yet persistent tannins.", ko: "루비빛 레드 와인으로, 섬세하고 조화로우며 균형 잡힌 복합미와 가볍지만 지속적인 탄닌감을 지녔습니다." } },
             altLabel: { en: "Want something slightly more structured?", ko: "좀 더 구조감있는 와인을 원하시나요?" },
             alt: { name: "VILLA FURA VALPOLICELLA RIPASSO SUPERIORE", price: 69, imgSrc: "assets/valpolicella_ripasso_nobg.png", description: { en: "60% Corvina, 25% Corvinone, 15% Rondinella, Veneto. Rich and velvety Valpolicella Ripasso Superiore with notes of dark cherry, dried fruit, and spice.", ko: "다크 체리, 건과일, 향신료의 풍미가 돋보이는 풍부하고 벨벳 같은 와인입니다." } }
         },
-        B: { 
+        B: {
             main: { name: "FEUDO APULIANO, PRIMITIVO DEL SALENTO IGP", price: 59, imgSrc: "assets/Primitivo_nobg.png", description: { en: "100% Primitivo, Puglia. A full-bodied yet smooth and well-balanced wine, showing intense aromas of ripe red fruit, a deep ruby-violet color, and a pleasant finish with subtle almond notes.", ko: "깊고 선명한 루비빛 컬러에 잘 익은 과실의 농밀한 향이 돋보이며, 풀바디이지만 부드럽고 균형 잡힌 구조와 은은한 아몬드 뉘앙스의 여운이 인상적인 와인입니다." } },
-            altLabel: { en: "Want something softer and less fruity?", ko: "좀 더 부드럽고 덜 과실향이 나는 와인을 원하시나요?" }, 
+            altLabel: { en: "Want something softer and less fruity?", ko: "좀 더 부드럽고 덜 과실향이 나는 와인을 원하시나요?" },
             alt: { name: "DON TOMASI, JATO ROSSO", price: 72, imgSrc: "assets/don_tomasi_jato_rosso_nobg.png", description: { en: "Shiraz, Nero D'avola, Sicilia. A fragrant wine displaying supple tannins, subtle herbal nuances, and remarkable balance on the palate.", ko: "섬세한 허브의 뉘앙스와 유연한 탄닌이 어우러진 향기로운 와인으로, 입안에서는 뛰어난 밸런스를 보여줍니다." } }
         },
-        C: { 
+        C: {
             main: { name: "DON TOMASI, JATO ROSSO", price: 72, imgSrc: "assets/don_tomasi_jato_rosso_nobg.png", description: { en: "Shiraz, Nero D'avola, Sicilia. A fragrant wine displaying supple tannins, subtle herbal nuances, and remarkable balance on the palate.", ko: "섬세한 허브의 뉘앙스와 유연한 탄닌이 어우러진 향기로운 와인으로, 입안에서는 뛰어난 밸런스를 보여줍니다." } },
-            altLabel: { en: "Want something stronger and more powerful?", ko: "좀 더 강하고 힘 있는 와인을 원하시나요?" }, 
+            altLabel: { en: "Want something stronger and more powerful?", ko: "좀 더 강하고 힘 있는 와인을 원하시나요?" },
             alt: { name: "SILVIO CARTA, CANNONAU DI SARDEGNA SERENATA DOC", price: 79, imgSrc: "assets/CannonaudiSardegna_nobg.png", description: { en: "100% Cannonau, Sardegna. Ripe, rich and warm notes of dark cherry, plum, blackberry and mint. Delicate aniseed touch, strong tannin, dry ending.", ko: "다크 체리, 자두, 블랙베리, 민트의 잘 익은 풍부하고 따뜻한 향입니다. 적당한 탄닌이 무게를 잘 잡아준다." } }
         },
-        D: { 
+        D: {
             main: { name: "TIRTEO, BARBERA D'ASTI SUPERIORE DOCG", price: 82, imgSrc: "assets/Barberadasti_nobg.png", description: { en: "100% Barbera, Piemonte. A bright ruby red wine with aromas of ripe red fruit and subtle spice, offering a well-defined structure, balanced tannins and a smooth, lingering finish.", ko: "선명한 루비 레드 컬러에 잘 익은 붉은 과실과 은은한 향신료 뉘앙스가 어우러지며, 균형 잡힌 탄닌과 부드러운 질감, 길게 이어지는 여운이 특징입니다." } },
-            altLabel: { en: "Want something more fruity than spices?", ko: "향신료보다는 더 과실 향이 강한 와인을 원하시나요?" }, 
+            altLabel: { en: "Want something more fruity than spices?", ko: "향신료보다는 더 과실 향이 강한 와인을 원하시나요?" },
             alt: { name: "TENUTA MONTETI, CABURNIO", price: 86, imgSrc: "assets/Tenuta_Monteti_Caburnio_Toscana__78761_nobg.png", description: { en: "50% Cabernet Sauvignon, 25% Merlot, 25% Alicante Bouschet, Toscana. Intense ruby. Captivating nose, with fresh notes of berries, cherry, currant and pomegranate. Persistent tannin, soft finishing.", ko: "강렬한 루비. 베리, 체리, 건포도, 석류의 신선한 향이 코를 사로잡습니다. 지속적인 탄닌, 부드러운 마무리 향신." } }
         }
     },
@@ -300,7 +300,31 @@ const resultsData = {
     }
 };
 
+// TODO: 아래 URL을 구글 웹앱 배포 후 발급받은 실제 URL로 교체하세요.
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwwnBAxL7ZNs2T4LH1fZqwMTV3JiOZ-BMYfG-65Palkgmnw4bqyLyGEK1ECPcApp3Mm/exec';
 
+function sendLogData(targetResult, isAlt) {
+    if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_WEB_APP_URL_HERE') return;
+
+    const data = {
+        timestamp: new Date().toISOString(),
+        language: currentLang,
+        wineType: currentWineType,
+        answers: userAnswers.join(', '),
+        resultName: targetResult.name,
+        price: targetResult.price || '',
+        isAlt: isAlt
+    };
+
+    fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // 구글 시트 웹앱의 CORS 이슈를 피하기 위해 필수
+        headers: {
+            'Content-Type': 'text/plain;charset=utf-8'
+        },
+        body: JSON.stringify(data)
+    }).catch(error => console.error('Error logging data:', error));
+}
 
 let currentLang = 'en'; // default ENG
 let currentWineType = null;
@@ -308,7 +332,7 @@ let currentQuestionIndex = 0;
 let userAnswers = [];
 let adminMode = false;
 let isViewingAlt = false;
-let currentResultObj = null; 
+let currentResultObj = null;
 
 const contentArea = document.getElementById('content-area');
 const adminOverlay = document.getElementById('admin-overlay');
@@ -326,7 +350,7 @@ const uiText = {
     congrats: { en: "Your Perfect Match", ko: "당신을 위한 완벽한 와인" }
 };
 
-window.setLanguage = function(lang) {
+window.setLanguage = function (lang) {
     currentLang = lang;
     document.getElementById('lang-en').classList.remove('active');
     document.getElementById('lang-ko').classList.remove('active');
@@ -368,7 +392,7 @@ function renderStartScreen() {
     `;
 }
 
-window.selectWineType = function(type) {
+window.selectWineType = function (type) {
     currentWineType = type;
     renderQuestion();
 };
@@ -404,24 +428,24 @@ function renderQuestion() {
     `;
 }
 
-window.selectOption = function(id) {
+window.selectOption = function (id) {
     userAnswers[currentQuestionIndex] = id;
     updateAdminDisplay();
-    
+
     // Visually update buttons
     const buttons = document.querySelectorAll('#current-options .btn-glass');
     buttons.forEach(btn => btn.classList.remove('selected'));
-    
+
     const clickedBtn = Array.from(buttons).find(b => b.textContent.startsWith(id + "."));
-    if(clickedBtn) clickedBtn.classList.add('selected');
+    if (clickedBtn) clickedBtn.classList.add('selected');
 
     // Smooth auto-advance delay
     setTimeout(() => {
         nextQuestion();
-    }, 400); 
+    }, 400);
 };
 
-window.nextQuestion = function() {
+window.nextQuestion = function () {
     const questions = quizData[currentWineType];
     if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
@@ -431,7 +455,7 @@ window.nextQuestion = function() {
     }
 };
 
-window.prevQuestion = function() {
+window.prevQuestion = function () {
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
         renderQuestion();
@@ -447,13 +471,13 @@ function processWaitingScreen() {
     `;
 
     // Wait 3 seconds
-    setTimeout(calculateResult, 3000); 
+    setTimeout(calculateResult, 3000);
 }
 
 function calculateResult() {
     const counts = { A: 0, B: 0, C: 0, D: 0 };
     userAnswers.forEach(ans => {
-        if(counts[ans] !== undefined) counts[ans]++;
+        if (counts[ans] !== undefined) counts[ans]++;
     });
 
     let max = 0;
@@ -471,7 +495,7 @@ function calculateResult() {
     }
 
     let majority = topChoices[0];
-    
+
     // Tiebreaker logic
     if (topChoices.length > 1) {
         if (currentWineType === 'red') {
@@ -488,6 +512,11 @@ function calculateResult() {
     currentResultObj = resultsData[currentWineType][majority];
     isViewingAlt = false;
     renderResultScreen();
+
+    // Log the initial main result
+    if (currentResultObj && currentResultObj.main) {
+        sendLogData(currentResultObj.main, false);
+    }
 }
 
 function renderResultScreen() {
@@ -532,12 +561,17 @@ function renderResultScreen() {
     `;
 }
 
-window.toggleAltWine = function() {
+window.toggleAltWine = function () {
     isViewingAlt = !isViewingAlt;
     renderResultScreen();
+
+    // Log if they view the alternative wine
+    if (isViewingAlt && currentResultObj && currentResultObj.alt) {
+        sendLogData(currentResultObj.alt, true);
+    }
 };
 
-window.toggleAdminMode = function() {
+window.toggleAdminMode = function () {
     adminMode = !adminMode;
     adminOverlay.style.display = adminMode ? 'block' : 'none';
     updateAdminDisplay();
@@ -547,7 +581,7 @@ function updateAdminDisplay() {
     if (!adminMode) return;
     const counts = { A: 0, B: 0, C: 0, D: 0 };
     userAnswers.forEach(ans => {
-        if(counts[ans] !== undefined) counts[ans]++;
+        if (counts[ans] !== undefined) counts[ans]++;
     });
     adminScores.textContent = `A:${counts.A} B:${counts.B} C:${counts.C} D:${counts.D}`;
 }
