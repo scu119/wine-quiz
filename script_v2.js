@@ -303,11 +303,24 @@ const resultsData = {
 // TODO: 아래 URL을 구글 웹앱 배포 후 발급받은 실제 URL로 교체하세요.
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwwnBAxL7ZNs2T4LH1fZqwMTV3JiOZ-BMYfG-65Palkgmnw4bqyLyGEK1ECPcApp3Mm/exec';
 
-function sendLogData(targetResult, isAlt) {
+let currentSessionLog = null;
+let logSent = false;
+
+function getKSTTime() {
+    // 한국 시간(KST)으로 변환
+    return new Intl.DateTimeFormat('ko-KR', {
+        timeZone: 'Asia/Seoul',
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit',
+        hour12: false
+    }).format(new Date());
+}
+
+function queueLogData(targetResult, isAlt) {
     if (!GOOGLE_SCRIPT_URL || GOOGLE_SCRIPT_URL === 'YOUR_GOOGLE_SCRIPT_WEB_APP_URL_HERE') return;
 
-    const data = {
-        timestamp: new Date().toISOString(),
+    currentSessionLog = {
+        timestamp: getKSTTime(),
         language: currentLang,
         wineType: currentWineType,
         answers: userAnswers.join(', '),
@@ -315,16 +328,33 @@ function sendLogData(targetResult, isAlt) {
         price: targetResult.price || '',
         isAlt: isAlt
     };
-
-    fetch(GOOGLE_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors', // 구글 시트 웹앱의 CORS 이슈를 피하기 위해 필수
-        headers: {
-            'Content-Type': 'text/plain;charset=utf-8'
-        },
-        body: JSON.stringify(data)
-    }).catch(error => console.error('Error logging data:', error));
+    logSent = false;
 }
+
+function flushLogData() {
+    if (currentSessionLog && !logSent) {
+        fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            keepalive: true, // 페이지가 닫히거나 이동해도 백그라운드에서 전송되도록 보장
+            headers: {
+                'Content-Type': 'text/plain;charset=utf-8'
+            },
+            body: JSON.stringify(currentSessionLog)
+        }).catch(error => console.error('Error logging data:', error));
+        logSent = true;
+    }
+}
+
+// 브라우저 탭을 닫거나 다른 앱으로 넘어갈 때 최종 로그 전송
+document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') {
+        flushLogData();
+    }
+});
+window.addEventListener('pagehide', () => {
+    flushLogData();
+});
 
 let currentLang = 'en'; // default ENG
 let currentWineType = null;
@@ -366,6 +396,9 @@ window.setLanguage = function (lang) {
 };
 
 function init() {
+    flushLogData(); // 이전 퀴즈의 로그가 남아있다면 전송 (Start Over 클릭 시)
+    currentSessionLog = null;
+    
     currentWineType = null;
     currentQuestionIndex = 0;
     userAnswers = [];
@@ -513,9 +546,9 @@ function calculateResult() {
     isViewingAlt = false;
     renderResultScreen();
 
-    // Log the initial main result
+    // Log the initial main result (queued)
     if (currentResultObj && currentResultObj.main) {
-        sendLogData(currentResultObj.main, false);
+        queueLogData(currentResultObj.main, false);
     }
 }
 
@@ -565,9 +598,11 @@ window.toggleAltWine = function () {
     isViewingAlt = !isViewingAlt;
     renderResultScreen();
 
-    // Log if they view the alternative wine
+    // Update queued log if they view the alternative wine (or go back to main)
     if (isViewingAlt && currentResultObj && currentResultObj.alt) {
-        sendLogData(currentResultObj.alt, true);
+        queueLogData(currentResultObj.alt, true);
+    } else if (!isViewingAlt && currentResultObj && currentResultObj.main) {
+        queueLogData(currentResultObj.main, false);
     }
 };
 
