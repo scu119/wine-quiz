@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>PerBacco Wine Selection</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>PerBacco Wine Quiz</title>
+    <link rel="canonical" href="https://scu119.github.io/wine-quiz/index_v2.html">
+    <meta http-equiv="refresh" content="0; url=index_v2.html">
+    <script>location.replace('index_v2.html' + location.search + location.hash);</script>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #111;
+            color: #d9c27e;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+        a { color: #d9c27e; }
+    </style>
 </head>
 <body>
-    <div id="app">
-        <!-- Header with Language Toggle -->
-        <header>
-            <div class="lang-toggle">
-                <button id="lang-en" class="active" onclick="setLanguage('en')">ENG</button>
-                <div class="divider">|</div>
-                <button id="lang-ko" onclick="setLanguage('ko')">KOR</button>
-            </div>
-        </header>
-
-        <!-- Dynamic Content Container -->
-        <main id="content-area">
-            <!-- Screens will be injected here by JS -->
-        </main>
-
-        <!-- Hidden Admin Trigger: double click bottom left corner -->
-        <div class="admin-mode-trigger" ondblclick="toggleAdminMode()" title="Double click for admin mode"></div>
-        <div id="admin-overlay" class="admin-overlay">
-            Admin Mode<br>Scores: <span id="admin-scores">-</span>
-        </div>
-    </div>
-    <script src="script.js?v=8"></script>
+    <!-- Root now points at the current quiz (v2). Kept as a redirect so the old
+         bookmarked root URL still lands on the live version served by the menu QR. -->
+    <p>Redirecting to the wine quiz&hellip; <a href="index_v2.html">Continue</a></p>
 </body>
 </html>
